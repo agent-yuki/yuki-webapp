@@ -1,0 +1,8 @@
+{
+  "name": "Agent YUKI Security Analyzer",
+  "description": "A high-performance crypto security dashboard with smart contract scanning and community-driven incident tracking.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
