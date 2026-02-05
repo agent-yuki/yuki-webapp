@@ -185,7 +185,7 @@ export default function ScanPage() {
   return (
     <div className="min-h-screen flex bg-background text-foreground">
       <Sidebar />
-      <main className="flex-1 ml-0 md:ml-72 p-8 md:p-12 overflow-y-auto">
+      <main className="flex-1 ml-0 md:ml-72 p-4 md:p-12 overflow-y-auto pt-16 md:pt-12">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}

@@ -127,7 +127,7 @@ export default function ProfilePage() {
     <div className="min-h-screen flex" style={{ backgroundColor: colors.primaryBg }}>
       <Sidebar />
 
-      <main className="flex-1 ml-72 p-8 md:p-12 overflow-y-auto">
+      <main className="flex-1 md:ml-72 p-4 md:p-12 overflow-y-auto pt-16 md:pt-12">
         <div className="max-w-4xl mx-auto space-y-8">
 
           {/* Header */}
