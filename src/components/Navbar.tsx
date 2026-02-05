@@ -5,7 +5,7 @@ import { useAuth } from '../contexts/AuthContext';
 import AuthModal from './auth/AuthModal';
 import SearchModal from './SearchModal';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Search, ChevronDown, Github, Twitter } from 'lucide-react';
+import { Menu, X, Search, ChevronDown, Github, Twitter, BookOpen } from 'lucide-react';
 import clsx from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
                   className="absolute top-full left-0 w-48 rounded-xl border border-border bg-popover p-1 shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-2 group-hover:translate-y-0"
                 >
                   <a
-                    href="https://github.com"
+                    href="https://github.com/agent-yuki/yuki-webapp"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex w-full items-center gap-3 rounded-md px-4 py-2 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
                     GitHub
                   </a>
                   <a
-                    href="https://x.com"
+                    href="https://x.com/agentyuki_cloud"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex w-full items-center gap-3 rounded-md px-4 py-2 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
@@ -79,8 +79,20 @@ const Navbar: React.FC = () => {
               </div>
 
               <div className="relative group cursor-pointer hover:text-foreground transition-colors">
-                <div className="flex items-center gap-1">
-                  Resources <ChevronDown className="w-3 h-3" />
+                <div className="flex items-center gap-1 py-4">
+                  Resources <ChevronDown className="w-3 h-3 transition-transform group-hover:rotate-180" />
+                </div>
+
+                <div
+                  className="absolute top-full left-0 w-48 rounded-xl border border-border bg-popover p-1 shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-2 group-hover:translate-y-0"
+                >
+                  <Link
+                    href="/docs"
+                    className="flex w-full items-center gap-3 rounded-md px-4 py-2 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
+                  >
+                    <BookOpen className="w-4 h-4" />
+                    API Docs
+                  </Link>
                 </div>
               </div>
               <Link href="/about" className="hover:text-foreground transition-colors">About</Link>
